@@ -211,7 +211,7 @@ const SimplifiedFrenchTutor = () => {
       {/* Tutor Character */}
       <div className="mb-6 relative">
         <img 
-          src="/api/placeholder/150/150" 
+          src="https://via.placeholder.com/150"
           alt="Tutor Character" 
           className={`rounded-full border-4 border-yellow-400 ${speaking ? 'animate-pulse' : ''}`}
         />
@@ -262,7 +262,7 @@ const SimplifiedFrenchTutor = () => {
           </h2>
           <div className="flex flex-col md:flex-row items-center mb-4">
             <img 
-              src="/api/placeholder/400/300" 
+              src="https://via.placeholder.com/400x300"
               alt="Welcome" 
               className="w-full md:w-1/2 rounded-lg mb-4 md:mb-0 md:mr-4"
             />
@@ -409,4 +409,6 @@ const SimplifiedFrenchTutor = () => {
   );
 };
 
-export default SimplifiedFrenchTutor;
+// Remove the import statement at the top since we're using script tags
+// and render the correct component name
+ReactDOM.render(<SimplifiedFrenchTutor />, document.getElementById('root'));
